@@ -1,0 +1,54 @@
+# Auction Scraper Configuration
+
+# --- Search Regions ---
+# Each region defines a zip code, radius, and the search terms to use within that area.
+regions:
+  - name: "Denver Area"
+    zip: "80205"
+    radius_miles: 50
+    search_terms:
+      - "trencher"
+      - "ground leveler"
+      - "land plane"
+      - "mini skid attachment"
+      - "skid steer attachment hydraulic"
+
+  - name: "Asheville Area"
+    zip: "28804"
+    radius_miles: 100
+    search_terms:
+      - "kubota m7060"
+      - "kubota tractor"
+      - "brush hog hydraulic pto"
+      - "rotary cutter"
+
+# --- Sites ---
+# Add or disable sites here. Each module must exist in scrapers/.
+sites:
+  - name: "RB Auction"
+    id: "rbauction"
+    url: "https://www.rbauction.com"
+    enabled: true
+
+  - name: "Roller Auction"
+    id: "rollerauction"
+    url: "https://rollerauction.com"
+    enabled: true
+
+  - name: "Equip-Bid"
+    id: "equipbid"
+    url: "https://www.equip-bid.com"
+    enabled: true
+
+# --- Output ---
+output:
+  html_file: "output/results.html"
+  cache_file: "cache/seen_items.json"
+  # How many days before an item is removed from cache if not seen again
+  item_expiry_days: 30
+
+# --- Browser ---
+browser:
+  headless: true
+  slow_mo_ms: 0        # Increase (e.g. 100) if sites are blocking fast interactions
+  timeout_ms: 30000

@@ -1,0 +1,7 @@
+playwright==1.44.0
+python-dotenv==1.0.1
+pyyaml==6.0.1
+pgeocode==0.4.0
+numpy==1.26.4
+jinja2==3.1.4
+python-dateutil==2.9.0
