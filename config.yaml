@@ -30,15 +30,15 @@ sites:
     url: "https://www.rbauction.com"
     enabled: true
 
-  - name: "Roller Auction"
-    id: "rollerauction"
-    url: "https://rollerauction.com"
-    enabled: true
+  # - name: "Roller Auction"
+  #   id: "rollerauction"
+  #   url: "https://rollerauction.com"
+  #   enabled: true
 
-  - name: "Equip-Bid"
-    id: "equipbid"
-    url: "https://www.equip-bid.com"
-    enabled: true
+  # - name: "Equip-Bid"
+  #   id: "equipbid"
+  #   url: "https://www.equip-bid.com"
+  #   enabled: true
 
 # --- Output ---
 output:
